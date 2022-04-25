@@ -1,0 +1,182 @@
+.check-out-heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  margin-top: 40px;
+  margin-left: 120px;
+  margin-bottom: 21px;
+}
+
+.information-container {
+  display: flex;
+  justify-content: center;
+}
+
+.information {
+  width: 584px;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 32px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #31461c;
+  margin-bottom: 8px;
+}
+
+.grid-item input {
+  height: 60px;
+  border: 2px solid #a8b087;
+  border-radius: 8px;
+}
+
+#email,
+#phone-number,
+#address {
+  grid-column: auto/ span 2;
+}
+
+.payment-method {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #404040;
+}
+.option {
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+  margin-bottom: 12px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.option label {
+  display: flex;
+  align-items: center;
+}
+
+.option label::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: solid 6px #a8b087;
+  border-radius: 50%;
+  margin-right: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="radio"]:checked + label::before {
+  border: solid 6px #31461c;
+}
+
+input[type="text"] {
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 60px;
+  background-color: #a8b087;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 12px;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 87px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .check-out-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 20px;
+  }
+
+  .information-container {
+    width: 100%;
+  }
+
+  .information {
+    width: 89%;
+  }
+
+  .grid {
+    grid-template-rows: repeat(7, 1fr);
+    grid-row-gap: 16px;
+  }
+  #first-name,
+  #last-name,
+  #postal-code,
+  #country {
+    grid-column: auto/ span 2;
+  }
+
+  .grid-item label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+  .payment-method {
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .option label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  input[type="submit"] {
+    margin-top: 16px;
+    margin-bottom: 18px;
+  }
+}

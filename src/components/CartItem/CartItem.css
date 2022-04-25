@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#cart-item-mobile {
+  display: none;
+}
+
+.cart-item-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 24px;
+  height: 149px;
+  border-bottom: solid 1px #a8b087;
+}
+
+.cart-item-description-container {
+  display: flex;
+  width: 337px;
+  height: auto;
+}
+
+.cart-item-description-container img {
+  width: 45.2%;
+  height: 100%;
+  margin-right: 32px;
+}
+
+.cart-item-description {
+  color: #404040;
+}
+
+.cart-item-description p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.cart-item-description h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.code {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.cost-per-item {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #404040;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #a8b087;
+}
+
+#quantity {
+  color: #404040;
+}
+
+.total-cost {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #404040;
+}
+
+.total-cost p {
+  margin-right: 33px;
+}
+
+.quantity p:hover {
+  cursor: pointer;
+}
+
+#quantity p:hover {
+  cursor: default;
+}
+
+#remove:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  #cart-item-desktop {
+    display: none;
+  }
+  #cart-item-mobile {
+    display: flex;
+  }
+  .cart-item-container {
+    width: 100%;
+    height: auto;
+    padding: 12px 0;
+  }
+  .cart-item-description-container {
+    overflow-x: hidden;
+    width: 68%;
+    height: 100%;
+  }
+  .cart-item-description-container img {
+    width: 146px;
+    height: 80px;
+    border-radius: 15px;
+    margin-right: 12px;
+  }
+  .cart-item-description p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .cart-item-description h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  #remove {
+    height: 20px;
+    width: 18.333332061767578px;
+  }
+  #quantity {
+    margin: 0 2px;
+  }
+  .cost {
+    display: flex;
+    justify-content: space-between;
+  }
+  .remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
