@@ -50,41 +50,49 @@
 .product-details-tags {
   display: flex;
   width: 100%;
-  height: auto;
-  padding: 40px;
+  height: 486px;
+  justify-content: space-evenly;
+  align-items: center;
   border: solid 3px #edf5da;
   border-radius: 12px;
   margin-bottom: 302px;
 }
 
-.product-details-tags img {
-  height: auto;
-  width: 50%;
-  margin-right: 2.3vw;
+.pd-img img {
+  width: 45.3vw;
+  height: 406px;
+  margin: 0 3.4vw;
+}
+
+.tags-para {
+  margin-right: 3.4vw;
 }
 
 .tags-para-origin {
+  font-family: "Poppins";
   font-style: normal;
-  font-weight: 600;
-  font-size: 1.4vw;
-  line-height: 2.1vw;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
   color: #404040;
 }
 
 .tags-para-name {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 2.8vw;
-  line-height: 4.2vw;
+  font-size: 48px;
+  line-height: 72px;
   color: #404040;
   margin-bottom: 0.7vw;
 }
 
 .tags-para-price {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 2.1vw;
-  line-height: 3.15vw;
+  font-size: 36px;
+  line-height: 54px;
   color: #a8b087;
   background-color: #edf5da;
   padding: 10px;
@@ -92,10 +100,11 @@
 }
 
 .tags-para-description {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.16vw;
-  line-height: 1.75vw;
+  font-size: 20px;
+  line-height: 30px;
   color: #404040;
   margin-bottom: 0.7vw;
 }
@@ -110,10 +119,11 @@
 }
 
 .counter p {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 1.75vw;
-  line-height: 2.1vw;
+  font-size: 24px;
+  line-height: 36px;
   color: #a8b087;
   letter-spacing: 0.93vw;
 }
@@ -131,20 +141,24 @@
 }
 
 .add-to-cart {
-  padding: 8px 65.5px;
+  padding: 0.66vw 5.48vw;
   background-color: #a8b087;
   color: #fff;
   border-radius: 12px;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5vw;
-  line-height: 2.2vw;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
 .add-to-cart:hover {
   cursor: pointer;
-  padding: 8px 70px;
+  color: #a8b087;
+  background-color: #fff;
+  border: #a8b087 solid 1px;
 }
 
 @media screen and (max-width: 1000px) {

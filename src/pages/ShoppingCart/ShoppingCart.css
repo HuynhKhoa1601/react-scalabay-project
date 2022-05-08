@@ -7,7 +7,7 @@
 .shopping-cart {
   width: 56.94%;
   height: auto;
-  margin-left: 60px;
+  margin-left: 9.8vw;
 }
 
 .shopping-cart-heading {
@@ -57,13 +57,13 @@
 
 .bill {
   margin-top: 40px;
-  margin-right: 60px;
+  margin-right: 9.8vw;
   padding: 0 28px;
   height: 100%;
   border: solid 1px #a8b087;
   border-radius: 20px;
   color: #404040;
-  padding-bottom: 280px;
+  padding-bottom: 17px;
 }
 
 .bill-heading {

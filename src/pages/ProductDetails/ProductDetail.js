@@ -3,6 +3,7 @@ import BlackTShirt from "../../img/Black-T-Shirt.png";
 import PinkTShirt from "../../img/Pink-T-Shirt.png";
 import WhiteTShirt from "../../img/White-T-Shirt.png";
 import BlueTShirt from "../../img/Blue-T-Shirt.png";
+import ThisImage from "../../img/Product-details.png";
 import "./ProductDetail.css";
 import { useSelector } from "react-redux";
 import { imgSelector } from "../../features/img.js";
@@ -29,7 +30,9 @@ const ProductDetail = (props) => {
           <p id="T-shirt">T-Shirts</p>
         </div>
         <div className="product-details-tags">
-          <img src={img[productName]} alt="products" />
+          <div className="pd-img">
+            <img src={ThisImage} alt="products" />
+          </div>
           <div className="tags-para">
             <p className="tags-para-origin">Owen</p>
             <p className="tags-para-name">Black T-Shirt</p>
